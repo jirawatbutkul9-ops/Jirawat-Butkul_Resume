@@ -45,12 +45,76 @@ const expData = {
       "Served as a judge for the Outstanding Student Competition.",
       "Evaluated candidates based on academic performance, leadership, and extracurricular activities."
     ]
-  }
+  },
+  brewbliss: {
+    title: "Owner & Data Analyst — BREWBLISS BAR",
+    company: "Personal Business | Delivery via LINE MAN, GrabFood, Shopee Food",
+    period: "May – October 2024",
+    bullets: [
+      "Founded and operated a Thai tea delivery business across major food delivery platforms.",
+      "Collected and analyzed sales data to identify best-selling products and peak order times.",
+      "Built Excel dashboards using Advanced formulas and Pivot Tables to track revenue and performance.",
+      "Applied data-driven insights to adjust menu pricing and promotional strategies."
+    ],
+    menu: [
+      { name: "Thai Tea", img: "menu-thaitea.png" },
+      { name: "Green Tea", img: "menu-greentea.png" },
+      { name: "Iced Black Tea", img: "menu-icedblacktea.png" },
+      { name: "Clear Matcha", img: "menu-clearmatcha.png" },
+      { name: "Matcha Latte", img: "menu-matchalatte.png" },
+      { name: "Iced Matcha Honey Lemon", img: "menu-icedmatchahoneylemon.png" },
+      { name: "Pink Mlik", img: "menu-pinkmlik.png" },
+      { name: "Pink Mlik Chocolate", img: "menu-pinkmlikchocolate.png" },
+      { name: "Peach Soda", img: "menu-peach.png" },
+      { name: "Strawberry Soda", img: "menu-strawberrysoda.png" },
+      { name: "Apple Soda", img: "menu-applesoda.png"}
+    ],
+    promotion: [
+      { name: "Thai Tea buy 2 get 1 free", img: "promo-thaited.jpg" }
+    ]
+  },
+  Internship: {
+    title: "UX/UI Designer & Content Creator",
+    company: "EVEANDBOY",
+    period: "December 01, 2022 – March 03, 2023",
+    bullets: [
+      "System Analysis: Designed UX/UI interfaces using user-centered analysis to enhance application usability.",
+      "Digital Content: Planned and created targeted website content to improve user engagement and marketing reach."
+    ]
+  },
 };
 
 function openModal(id) {
   const data = expData[id];
   if (!data) return;
+
+  const menuHTML = data.menu ? `
+    <div class="modal-section">
+      <h3 class="modal-subtitle">🧋 Menu</h3>
+      <div class="modal-img-grid">
+        ${data.menu.map(m => `
+          <div class="modal-img-item" onclick="openModalLightbox('${m.img}')">
+            <img src="${m.img}" alt="${m.name}">
+            <p>${m.name}</p>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  ` : "";
+
+  const promoHTML = data.promotion ? `
+    <div class="modal-section">
+      <h3 class="modal-subtitle">🎉 Promotion</h3>
+      <div class="modal-img-grid">
+        ${data.promotion.map(p => `
+          <div class="modal-img-item" onclick="openModalLightbox('${p.img}')">
+            <img src="${p.img}" alt="${p.name}">
+            <p>${p.name}</p>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  ` : "";
 
   modalContent.innerHTML = `
     <h2>${data.title}</h2>
@@ -60,6 +124,8 @@ function openModal(id) {
     <ul>
       ${data.bullets.map(b => `<li>${b}</li>`).join("")}
     </ul>
+    ${menuHTML}
+    ${promoHTML}
   `;
 
   modal.style.display = "flex";
@@ -93,4 +159,21 @@ function openEduModal() {
 
 window.addEventListener("click", function(e) {
   if (e.target === eduModal) eduModal.style.display = "none";
+});
+
+// Modal Image Lightbox
+function openModalLightbox(src) {
+  const lb = document.getElementById("modalLightbox");
+  const img = document.getElementById("modalLightboxImg");
+  img.src = src;
+  lb.style.display = "flex";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const lb = document.getElementById("modalLightbox");
+  if (lb) {
+    lb.addEventListener("click", function() {
+      lb.style.display = "none";
+    });
+  }
 });
