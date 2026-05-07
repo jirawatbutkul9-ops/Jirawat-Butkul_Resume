@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jirawat Butkul - Resume & Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<nav class="navbar">
+  <button class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-menu">
+    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+    <li><a href="#introduce" onclick="closeMenu()">Introduce</a></li>
+    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+    <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
+    <li><a href="#education" onclick="closeMenu()">Education</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
+<div class="menu-overlay" onclick="closeMenu()"></div>
+
+<!-- Home Section -->
+<div class="glass-card">
+  <div class="hero" id="home">
+    <div class="hero-text">
+      <h3>Hello, I'm</h3>
+      <h1>Jirawat Butkul</h1>
+      <p>
+        MIS graduate with proven expertise in Stakeholder Management and Negotiation from the aviation industry.
+        Skilled in Requirement Gathering and UX/UI Analysis, with a strong track record of delivering data-driven results.
+      </p>
+      <div class="buttons">
+        <a href="#introduce" class="download-btn" id="expBtn">Introduce</a>
+        <a href="Jirawat Butkul_Resume.pdf" download class="download-btn">Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="slider">
+        <div class="slides">
+          <img src="profile1.jpg" class="slide active">
+          <img src="profile2.jpg" class="slide">
+          <img src="profile3.jpg" class="slide">
+        </div>
+        <div class="indicators">
+          <div class="indicator active"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Introduce Section -->
+<section id="introduce">
+  <div class="intro-container">
+
+    <div class="intro-slider-wrap">
+      <div class="bento-grid">
+        <div class="bento-item bento-large">
+          <img src="Introduce1.jpg" alt="work1">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce2.jpg" alt="work2">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce3.jpg" alt="work3">
+        </div>
+        <div class="bento-item bento-wide">
+          <img src="Introduce4.jpg" alt="work4">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce5.jpg" alt="work5">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce6.jpg" alt="work6">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce7.jpg" alt="work7">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce8.jpg" alt="work8">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce9.jpg" alt="work9">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce10.jpg" alt="work10">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce11.jpg" alt="work11">
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-text">
+      <h2>Introduce</h2>
+      <p>Hello, I'm Jirawat Butkul.</p>
+      <p>
+        My decision to transition into a new career path stems from discovering my true interests
+        through my most recent role. I was responsible for sales performance, analyzing flight
+        situations, and consolidating data to support decision-making.
+      </p>
+      <p>
+        Through this experience, I developed a strong interest in working with data and numbers,
+        as well as a passion for analytical thinking and structured planning. I also enjoy engaging
+        with people — understanding their challenges and contributing to practical solutions.
+      </p>
+      <p>
+        For these reasons, I believe that a Business Analyst role aligns well with my strengths
+        and interests. I am also highly interested in technology and emerging trends, and I am
+        committed to continuously learning and improving my skills to create meaningful value
+        for organizations.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" src="" alt="">
+  <div class="lightbox-indicators"></div>
+  <div class="lightbox-controls">
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+  </div>
+</div>
+
+<!-- Experience Section -->
+<div id="experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="exp-grid">
+
+    <div class="exp-card" onclick="openModal('airmacau')">
+      <span class="exp-tag work">WORK</span>
+      <div class="exp-icon">✈️</div>
+      <h3>Passenger Sales / Reservation & Ticketing Assistant</h3>
+      <p>Air Macau</p>
+      <span>January 03, 2023 - October 17, 2024</span>
+    </div>
+
+    <div class="exp-card" onclick="openModal('judge')">
+      <span class="exp-tag judge">JUDGE</span>
+      <div class="exp-icon">🏆</div>
+      <h3>Outstanding Student Competition</h3>
+      <p>Suan Sunandha Rajabhat University</p>
+      <span>July 11, 2025</span>
+    </div>
+
+    <div class="exp-card" onclick="openModal('leadership')">
+      <span class="exp-tag speaking">SPEAKING</span>
+      <div class="exp-icon">🎤</div>
+      <h3>"Unlock Your Leadership" for student club members</h3>
+      <p>Suan Sunandha Rajabhat University</p>
+      <span>March 11, 2025</span>
+      <div class="exp-score">⭐ 4.68 / 5.00</div>
+    </div>
+
+    <div class="exp-card" onclick="openModal('workforce')">
+      <span class="exp-tag speaking">SPEAKING</span>
+      <div class="exp-icon">🎤</div>
+      <h3>Workforce Readiness</h3>
+      <p>Suan Sunandha Rajabhat University</p>
+      <span>July 12, 2024</span>
+    </div>
+
+    <div class="exp-card" onclick="openModal('Internship')">
+      <span class="exp-tag internship">INTERNSHIP</span>
+      <div class="exp-icon">🧑‍💻</div>
+      <h3>UX/UI Designer & Content Creator</h3>
+      <p>EVEANDBOY</p>
+      <span>December 01, 2022 - March 03, 2023</span>
+    </div>
+
+    <div class="exp-card" onclick="openModal('brewbliss')">
+      <span class="exp-tag business">BUSINESS</span>
+      <div class="exp-icon">🧋</div>
+      <h3>Owner & Data Analyst</h3>
+      <p>BREWBLISSBAR</p>
+      <span>May – October 2025</span>
+    </div>
+
+  </div>
+</div>
+ 
+<!-- Certifications Section -->
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <div class="cert-icon">🌐</div>
+      <h3 class="cert-title">Digital Awareness Checkpoint</h3>
+      <p class="cert-issuer">True Digital Academy</p>
+      <a href="Certificate-TDA-DAC-TH-TH.pdf" target="_blank" class="cert-link">View Certificate →</a>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">📊</div>
+      <h3 class="cert-title">Big Data Analytics</h3>
+      <p class="cert-issuer">Thai MOOC</p>
+      <a href="RMUTT RMUTT015 ใบรับรอง _ Thai MOOC_LMS.pdf" target="_blank" class="cert-link">View Certificate →</a>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🧠</div>
+      <h3 class="cert-title">Decision Support System</h3>
+      <p class="cert-issuer">Thai MOOC</p>
+      <a href="RSU RSU003 ใบรับรอง _ Thai MOOC_LMS.pdf" target="_blank" class="cert-link">View Certificate →</a>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🤝</div>
+      <h3 class="cert-title">Business Negotiations</h3>
+      <p class="cert-issuer">Chula MOOC</p>
+      <a href="certificate_59191_1318615-1318615-17291007390484.jpg" target="_blank" class="cert-link">View Certificate →</a>
+    </div>
+
+  </div>
+
+  <!-- Learning Path -->
+  <div class="learning-section">
+    <h3 class="cert-subtitle">📚 Currently Learning & Future Plans</h3>
+    <div class="learning-grid">
+
+      <!-- Currently Learning -->
+      <div class="learning-group">
+        <h4 class="learning-group-title">📖 Currently Learning</h4>
+        <div class="learning-cards">
+          <div class="learning-card learning-current">
+            <span class="learning-badge">In Progress</span>
+            <h4>Introduction to Computer Science</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future Plans -->
+      <div class="learning-group">
+        <h4 class="learning-group-title">🎯 Future Plans</h4>
+        <div class="learning-cards">
+
+          <div class="learning-card learning-future">
+            <span class="learning-badge future">Planned — Coding</span>
+            <ul>
+              <li>Command Prompt</li>
+              <li>GitHub for Developer</li>
+              <li>Fundamental Web Dev with HTML & CSS3</li>
+              <li>Introduction to JavaScript</li>
+              <li>Introduction to Web App Development with Node.js & Express</li>
+              <li>Essential SQL for Everyone</li>
+              <li>JavaScript, Python</li>
+            </ul>
+          </div>
+
+          <div class="learning-card learning-future">
+            <span class="learning-badge future">Planned — Data</span>
+            <ul>
+              <li>Excel Advanced</li>
+              <li>Power BI</li>
+              <li>Tableau</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="timeline">
+
+    <div class="edu-item">
+      <div class="circle"></div>
+      <div class="edu-card" onclick="openEduModal()" style="cursor:pointer;">
+        <h3>🎓 Bachelor's Degree</h3>
+        <p class="edu-university">Suan Sunandha Rajabhat University</p>
+        <p class="edu-faculty">Faculty of Science and Technology</p>
+        <p class="edu-major">Management Information Systems (MIS)</p>
+        <span class="edu-year">2019 – 2023</span>
+        <p class="edu-project">📋 Capstone Project: The Development of a Public Relations System to Promote the Hire-Purchase Business of Aquatic Extreme Sports.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="circle"></div>
+      <div class="edu-card">
+        <h3>🏫 High School</h3>
+        <p class="edu-university">Udonpittayanukul School</p>
+        <p class="edu-major">Science – Mathematics</p>
+        <span class="edu-year">2016 – 2019</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Activities Section -->
+<section id="activities">
+  <h2 class="section-title">Activities</h2>
+  <div class="activities-container">
+
+    <!-- 2562 -->
+    <div class="activity-group">
+      <h3 class="activity-year">🎤 Master of Ceremonies | The Student Role Model Competition 2019</h3>
+      <div class="activity-grid">
+        <div class="activity-item"><img src="2562-1.jpg" alt="2562-1"></div>
+        <div class="activity-item"><img src="2562-2.jpg" alt="2562-2"></div>
+        <div class="activity-item"><img src="2562-3.jpg" alt="2562-3"></div>
+        <div class="activity-item"><img src="2562-4.jpg" alt="2562-4"></div>
+      </div>
+    </div>
+
+    <!-- 2563 -->
+    <div class="activity-group">
+      <h3 class="activity-year">🎤 Master of Ceremonies | The Student Role Model Competition 2020</h3>
+      <div class="activity-grid">
+        <div class="activity-item"><img src="2563-1.jpg" alt="2563-1"></div>
+        <div class="activity-item"><img src="2563-2.jpg" alt="2563-2"></div>
+        <div class="activity-item"><img src="2563-3.jpg" alt="2563-3"></div>
+        <div class="activity-item"><img src="2563-4.jpg" alt="2563-4"></div>
+      </div>
+    </div>
+
+    <!-- 2564 -->
+    <div class="activity-group">
+      <h3 class="activity-year">🎤 Master of Ceremonies for Faculty PR | Faculty of Science and Technology, 2021</h3>
+      <div class="activity-grid">
+        <div class="activity-item"><img src="2564-1.jpg" alt="2564-1"></div>
+        <div class="activity-item"><img src="2564-2.jpg" alt="2564-2"></div>
+        <div class="activity-item"><img src="2564-3.jpg" alt="2564-3"></div>
+        <div class="activity-item"><img src="2564-4.jpg" alt="2564-4"></div>
+      </div>
+    </div>
+
+    <!-- 2565 -->
+    <div class="activity-group">
+      <h3 class="activity-year">🎤 Master of Ceremonies | Freshmen Orientation, Faculty of Science and Technology, 2022</h3>
+      <div class="activity-grid">
+        <div class="activity-item"><img src="2565-1.jpg" alt="2565-1"></div>
+        <div class="activity-item"><img src="2565-2.jpg" alt="2565-2"></div>
+        <div class="activity-item"><img src="2565-3.jpg" alt="2565-3"></div>
+        <div class="activity-item"><img src="2565-4.jpg" alt="2565-4"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
+
+    <div class="skills-card">
+      <div class="skills-icon">💻</div>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Analysis & Modeling: Requirement Gathering, Gap Analysis, Business Intelligence, Data Analytics.</li>
+        <li>Database: SQL (Basic), Database Management Systems.</li>
+        <li>Design & Tools: UX/UI Design (User-Centered Analysis), Microsoft Excel (Intermediate), Data Visualization , ChatGPT for Analysis, and Kiro for AI coding.</li>
+        <li>Documentation: Preparing Sales Reports, Aviation Situation Updates, and Social Media Performance Reports.</li>
+      </ul>
+    </div>
+
+    <div class="skills-card">
+      <div class="skills-icon">🤝</div>
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Stakeholder Management</li>
+        <li>Professional Facilitation (MC)</li>
+        <li>Negotiation</li>
+        <li>Presentation</li>
+        <li>Complex Problem-Solving</li>
+        <li>Teamwork</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-container">
+
+    <a href="tel:+66615847964" class="contact-card">
+      <div class="contact-top">
+        <div class="contact-icon">📞</div>
+        <div class="contact-info">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">(+66) 61-5847964</span>
+        </div>
+      </div>
+      <button class="copy-btn" onclick="event.preventDefault(); copyToClipboard('+66615847964', this)">Copy</button>
+    </a>
+
+    <a href="mailto:jirawatbutkul9@gmail.com?subject=Hello%20Jirawat" class="contact-card">
+      <div class="contact-top">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">jirawatbutkul9@gmail.com</span>
+        </div>
+      </div>
+      <button class="copy-btn" onclick="event.preventDefault(); copyToClipboard('jirawatbutkul9@gmail.com', this)">Copy</button>
+    </a>
+
+    <a href="https://www.linkedin.com/in/jirawat-butkul-920b48314/" target="_blank" class="contact-card">
+      <div class="contact-top">
+        <div class="contact-icon">💼</div>
+        <div class="contact-info">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">jirawat-butkul-920b48314</span>
+        </div>
+      </div>
+      <button class="copy-btn" onclick="event.preventDefault(); copyToClipboard('https://www.linkedin.com/in/jirawat-butkul-920b48314/', this)">Copy</button>
+    </a>
+
+  </div>
+</section>
+
+<!-- Modal Image Lightbox -->
+<div id="modalLightbox" style="display:none; position:fixed; z-index:99999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:pointer;">
+  <img id="modalLightboxImg" src="" alt="" style="max-width:90vw; max-height:90vh; border-radius:12px; object-fit:contain;">
+</div>
+
+<!-- Modal -->
+<div id="expModal" class="modal">
+  <div class="modal-content"></div>
+</div>
+
+<!-- Education Modal -->
+<div id="eduModal" class="modal">
+  <div class="modal-content">
+    <h2>Capstone Project</h2>
+    <p><strong>The Development of a Public Relations System to Promote the Hire-Purchase Business of Aquatic Extreme Sports</strong></p>
+    <p style="padding: 12px 28px 0; opacity: 0.8; font-size: 14px; line-height: 1.7;">Developed a comprehensive digital ecosystem designed to centralize the extreme sports community and support local businesses through digitalization. The platform focuses on three core functional pillars:</p>
+    <ul>
+      <li><strong>Knowledge & Engagement Hub:</strong> Created an interactive community forum for expert knowledge sharing, peer-to-peer support, and experience exchange to enhance user engagement.</li>
+      <li><strong>Business Directory & PR Platform:</strong> Engineered a centralized database of extreme sports retailers and rental services nationwide, serving as a PR tool to increase market visibility for local entrepreneurs.</li>
+      <li><strong>Instructional Resource Center:</strong> Integrated a structured educational module providing standardized safety guidelines and technical tutorials for various extreme sports.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+// Hamburger Menu
+function toggleMenu() {
+  const menu = document.querySelector(".nav-menu");
+  const hamburger = document.querySelector(".hamburger");
+  const overlay = document.querySelector(".menu-overlay");
+  menu.classList.toggle("open");
+  hamburger.classList.toggle("active");
+  overlay.classList.toggle("open");
+}
+
+function closeMenu() {
+  document.querySelector(".nav-menu").classList.remove("open");
+  document.querySelector(".hamburger").classList.remove("active");
+  document.querySelector(".menu-overlay").classList.remove("open");
+}
+
+// Profile Slider (auto only)
+const slides = document.querySelectorAll(".slide");
+const indicators = document.querySelectorAll(".indicators .indicator");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(s => s.classList.remove("active"));
+  indicators.forEach(d => d.classList.remove("active"));
+  slides[i].classList.add("active");
+  indicators[i].classList.add("active");
+}
+
+setInterval(function() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 3000);
+
+// Active nav tracking
+function updateActiveNav() {
+  const sections = document.querySelectorAll("#home, #introduce, #experience, #education, #skills, #certifications, #contact");
+  const navLinks = document.querySelectorAll(".navbar a");
+  let current = "home";
+
+  sections.forEach(section => {
+    if (window.scrollY >= section.offsetTop - 80) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+}
+
+updateActiveNav();
+window.addEventListener("scroll", updateActiveNav);
+
+// Lightbox (รองรับทั้ง Introduce และ Activities)
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const lightboxIndicatorsWrap = document.querySelector(".lightbox-indicators");
+
+let currentImgs = [];
+let currentIndex = 0;
+
+function openLightbox(imgs, index) {
+  currentImgs = imgs;
+  currentIndex = index;
+
+  // reset indicators
+  lightboxIndicatorsWrap.innerHTML = "";
+  imgs.forEach((_, i) => {
+    const dot = document.createElement("div");
+    dot.classList.add("indicator");
+    if (i === index) dot.classList.add("active");
+    lightboxIndicatorsWrap.appendChild(dot);
+  });
+
+  lightboxImg.src = imgs[index].src;
+  lightbox.classList.add("active");
+}
+
+function updateLightbox(i) {
+  currentIndex = i;
+  lightboxImg.src = currentImgs[i].src;
+  document.querySelectorAll(".lightbox-indicators .indicator").forEach((d, idx) => {
+    d.classList.toggle("active", idx === i);
+  });
+}
+
+// Bento (Introduce)
+const bentoImgs = Array.from(document.querySelectorAll(".bento-item img"));
+bentoImgs.forEach((img, i) => {
+  img.addEventListener("click", () => openLightbox(bentoImgs, i));
+});
+
+// Activities - แยกตาม group
+document.querySelectorAll(".activity-group").forEach(group => {
+  const imgs = Array.from(group.querySelectorAll(".activity-item img"));
+  imgs.forEach((img, i) => {
+    img.addEventListener("click", () => openLightbox(imgs, i));
+  });
+});
+
+document.querySelector(".lightbox-prev").onclick = function(e) {
+  e.stopPropagation();
+  updateLightbox((currentIndex - 1 + currentImgs.length) % currentImgs.length);
+};
+
+document.querySelector(".lightbox-next").onclick = function(e) {
+  e.stopPropagation();
+  updateLightbox((currentIndex + 1) % currentImgs.length);
+};
+
+document.querySelector(".lightbox-close").onclick = function() {
+  lightbox.classList.remove("active");
+};
+
+lightbox.addEventListener("click", function(e) {
+  if (e.target === lightbox) lightbox.classList.remove("active");
+});
+
+// Keyboard navigation
+document.addEventListener("keydown", function(e) {
+  if (!lightbox.classList.contains("active")) return;
+  if (e.key === "ArrowRight") updateLightbox((currentIndex + 1) % currentImgs.length);
+  if (e.key === "ArrowLeft") updateLightbox((currentIndex - 1 + currentImgs.length) % currentImgs.length);
+  if (e.key === "Escape") lightbox.classList.remove("active");
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
