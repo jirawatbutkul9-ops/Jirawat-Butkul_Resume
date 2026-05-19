@@ -1172,6 +1172,21 @@ nav a.active::after {
   text-align: center;
 }
 
+.cert-group {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.cert-group-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  opacity: 0.85;
+  text-align: left;
+}
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
