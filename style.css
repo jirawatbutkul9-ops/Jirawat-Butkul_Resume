@@ -146,12 +146,13 @@ nav a.active::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 32px;
   padding-top: 40px;
 }
 
 .hero-text {
   flex: 1;
+  min-width: 0;
 }
 
 .hero h1 {
@@ -167,7 +168,7 @@ nav a.active::after {
 }
 
 .hero p {
-  max-width: 480px;
+  max-width: 100%;
   line-height: 1.8;
   font-size: 16px;
   opacity: 0.9;
@@ -179,6 +180,7 @@ nav a.active::after {
 .buttons {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .download-btn {
@@ -197,10 +199,78 @@ nav a.active::after {
   color: black;
 }
 
+.hero .download-btn,
+.hero .resume-select-wrap {
+  width: 245px;
+  height: 54px;
+}
+
+.hero .download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-select-wrap {
+  position: relative;
+  min-width: 245px;
+}
+
+.resume-select-wrap::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  right: 26px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.resume-select-wrap:hover::after {
+  border-color: black;
+}
+
+.resume-select {
+  width: 100%;
+  height: 100%;
+  min-width: 170px;
+  padding: 12px 42px 12px 16px;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  background: rgba(15, 23, 42, 0.7);
+  font: inherit;
+  text-align: center;
+  text-align-last: center;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume-select:hover {
+  color: black;
+  background: white;
+}
+
+.resume-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.resume-select option {
+  padding: 12px;
+  color: #172033;
+  background: #ffffff;
+}
+
 .hero-image {
   flex: 1;
+  min-width: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -210,7 +280,7 @@ nav a.active::after {
 /* ========================= */
 .slider {
   position: relative;
-  width: 500px;
+  width: min(500px, 100%);
   height: 520px;
   display: flex;
   justify-content: center;
@@ -321,7 +391,7 @@ nav a.active::after {
 
 .intro-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 60px;
   flex-wrap: wrap;
 }
@@ -359,9 +429,9 @@ nav a.active::after {
   transition: 0.3s;
 }
 
-/* รูปใหญ่ 2x2 */
+/* รูปหลักเต็มความกว้าง */
 .bento-large {
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: span 2;
 }
 
@@ -836,20 +906,21 @@ nav a.active::after {
 }
 
 .skills-card ul li {
+  position: relative;
   padding: 8px 0;
+  padding-left: 18px;
   font-size: 14px;
+  line-height: 1.55;
   color: #ddd;
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .skills-card ul li::before {
   content: "▸";
+  position: absolute;
+  left: 0;
+  top: 9px;
   color: #a78bfa;
-  flex-shrink: 0;
-  margin-top: 1px;
 }
 
 

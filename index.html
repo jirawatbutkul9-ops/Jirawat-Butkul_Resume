@@ -37,12 +37,20 @@
       <h3>Hello, I'm</h3>
       <h1>Jirawat Butkul</h1>
       <p>
-        MIS graduate with proven expertise in Stakeholder Management and Negotiation from the aviation industry.
-        Skilled in Requirement Gathering and UX/UI Analysis, with a strong track record of delivering data-driven results.
+        Management Information Systems graduate with a UX/UI design foundation and client-facing consultation experience in aviation, where I built trust with partners like Trip.com and Traveloka. Through a university capstone project, I documented requirements and designed user flows for a digital platform.
+      </p>
+      <p>
+        Exploring opportunities across Product Owner, Business Analyst, Business Developer, Presales Solution, and Presales Engineer roles — combining analytical thinking, clear communication, and AI-assisted productivity (ChatGPT, Gemini, Copilot, Claude, Perplexity) to turn business needs into practical solutions.
       </p>
       <div class="buttons">
         <a href="#introduce" class="download-btn" id="expBtn">Introduce</a>
-        <a href="Resume_Jirawat_Butkul.pdf" download class="download-btn">Download Resume</a>
+        <div class="resume-select-wrap">
+          <select id="resumeSelect" class="resume-select" aria-label="Select resume type" onchange="downloadResume()">
+            <option value="" disabled selected hidden>Download Resume</option>
+            <option value="Resume_Jirawat_Butkul-for-PO-BA-BD.pdf">Resume: PO / BA / BD</option>
+            <option value="Resume_Jirawat_Butkul-for-Presales.pdf">Resume: Presales</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -78,7 +86,7 @@
         <div class="bento-item">
           <img src="Introduce3.jpg" alt="work3">
         </div>
-        <div class="bento-item bento-wide">
+        <div class="bento-item">
           <img src="Introduce4.jpg" alt="work4">
         </div>
         <div class="bento-item">
@@ -90,7 +98,7 @@
         <div class="bento-item">
           <img src="Introduce7.jpg" alt="work7">
         </div>
-        <div class="bento-item">
+        <div class="bento-item bento-wide">
           <img src="Introduce8.jpg" alt="work8">
         </div>
         <div class="bento-item">
@@ -102,27 +110,32 @@
         <div class="bento-item">
           <img src="Introduce11.jpg" alt="work11">
         </div>
+        <div class="bento-item">
+          <img src="Introduce12.jpg" alt="work12">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce13.jpg" alt="work13">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce14.jpg" alt="work14">
+        </div>
+        <div class="bento-item">
+          <img src="Introduce15.jpg" alt="work15">
+        </div>
       </div>
     </div>
 
     <div class="intro-text">
       <h2>Introduce</h2>
-      <p>Hello, I'm Jirawat Butkul.</p>
+      <p><strong>Hello, I'm Jirawat Butkul.</strong></p>
       <p>
-        My decision to transition into a new career path stems from discovering my true interests
-        through my most recent role. I was responsible for sales performance, analyzing flight
-        situations, and consolidating data to support decision-making.
+        My decision to explore a new career path stems from discovering my true interests through my most recent role, where I was responsible for sales performance, analyzing flight and market situations, and consolidating data to support decision-making — while also serving as the go-to consultant for passengers and travel agents navigating complex policies and options.
       </p>
       <p>
-        Through this experience, I developed a strong interest in working with data and numbers,
-        as well as a passion for analytical thinking and structured planning. I also enjoy engaging
-        with people — understanding their challenges and contributing to practical solutions.
+        Through this experience, I developed a strong interest in working with data and structured problem-solving, as well as a passion for translating business needs into clear, actionable plans. I also enjoy engaging with people directly — understanding their challenges, explaining technical details clearly, and guiding them toward practical solutions, even under pressure.
       </p>
       <p>
-        For these reasons, I believe that a Business Analyst role aligns well with my strengths
-        and interests. I am also highly interested in technology and emerging trends, and I am
-        committed to continuously learning and improving my skills to create meaningful value
-        for organizations.
+        For these reasons, I believe roles such as Product Owner, Business Analyst, Business Developer, Presales Solution, and Presales Engineer align well with my strengths and interests — each drawing on my ability to bridge business needs, technical understanding, and client communication. I am also highly interested in technology and emerging tools, including AI (ChatGPT, Gemini, Copilot, Claude, Perplexity), and I am committed to continuously learning and improving my skills to create meaningful value for organizations.
       </p>
     </div>
 
@@ -145,12 +158,20 @@
   <h2 class="section-title">Experience</h2>
   <div class="exp-grid">
 
+    <div class="exp-card" onclick="openModal('military')">
+      <span class="exp-tag work">WORK</span>
+      <div class="exp-icon">🪖</div>
+      <h3>Conscript (Mandatory National Service)</h3>
+      <p>Royal Thai Armed Forces</p>
+      <span>November 2025 - October 2026</span>
+    </div>
+
     <div class="exp-card" onclick="openModal('airmacau')">
       <span class="exp-tag work">WORK</span>
       <div class="exp-icon">✈️</div>
       <h3>Passenger Sales / Reservation & Ticketing Assistant</h3>
-      <p>Air Macau</p>
-      <span>January 03, 2023 - October 17, 2024</span>
+      <p>Air Macau Airline</p>
+      <span>January 2024 - October 2025</span>
     </div>
 
     <div class="exp-card" onclick="openModal('judge')">
@@ -158,7 +179,7 @@
       <div class="exp-icon">🏆</div>
       <h3>Outstanding Student Competition</h3>
       <p>Suan Sunandha Rajabhat University</p>
-      <span>July 11, 2025</span>
+      <span>July 2025</span>
     </div>
 
     <div class="exp-card" onclick="openModal('leadership')">
@@ -166,7 +187,7 @@
       <div class="exp-icon">🎤</div>
       <h3>"Unlock Your Leadership" for student club members</h3>
       <p>Suan Sunandha Rajabhat University</p>
-      <span>March 11, 2025</span>
+      <span>March 2025</span>
       <div class="exp-score">⭐ 4.68 / 5.00</div>
     </div>
 
@@ -175,7 +196,7 @@
       <div class="exp-icon">🎤</div>
       <h3>Workforce Readiness</h3>
       <p>Suan Sunandha Rajabhat University</p>
-      <span>July 12, 2024</span>
+      <span>July 2024</span>
     </div>
 
     <div class="exp-card" onclick="openModal('Internship')">
@@ -183,7 +204,7 @@
       <div class="exp-icon">🧑‍💻</div>
       <h3>UX/UI Designer & Content Creator</h3>
       <p>EVEANDBOY</p>
-      <span>December 01, 2022 - March 03, 2023</span>
+      <span>December 2022 - March 2023</span>
     </div>
 
     <div class="exp-card" onclick="openModal('brewbliss')">
@@ -402,10 +423,10 @@
       <div class="skills-icon">💻</div>
       <h3>Technical Skills</h3>
       <ul>
-        <li>Analysis & Modeling: Requirement Gathering, Gap Analysis, Business Intelligence, Data Analytics.</li>
-        <li>Database: SQL (Basic), Database Management Systems.</li>
-        <li>Design & Tools: UX/UI Design (User-Centered Analysis), Microsoft Excel (Intermediate), Data Visualization , ChatGPT for Analysis, and Kiro for AI coding.</li>
-        <li>Documentation: Preparing Sales Reports, Aviation Situation Updates, and Social Media Performance Reports.</li>
+        <li><strong>Business &amp; Product Analysis:</strong> Systems Analysis &amp; Design, SDLC Concepts, Requirements Documentation, User Flows, Process Flow Diagramming.</li>
+        <li><strong>User Experience &amp; Media:</strong> UX/UI Design, User-Centered Design, Content Creation, Product Photography, Short-Form Video Production.</li>
+        <li><strong>Data &amp; Tools:</strong> Basic Data Analysis Spreadsheets (Excel), Figma, Visual Studio Code, Kiro, GitHub, Technical Documentation.</li>
+        <li><strong>AI-Assisted Productivity:</strong> Using generative AI tools (ChatGPT, Gemini, Copilot, Claude, Perplexity) to draft documents and emails, summarize information, and support day-to-day research and problem-solving.</li>
       </ul>
     </div>
 
@@ -413,12 +434,14 @@
       <div class="skills-icon">🤝</div>
       <h3>Soft Skills</h3>
       <ul>
-        <li>Stakeholder Management</li>
-        <li>Guest Speaker</li>
-        <li>Negotiation</li>
-        <li>Presentation</li>
-        <li>Complex Problem-Solving</li>
-        <li>Teamwork</li>
+        <li>Cross-Functional Communication</li>
+        <li>Stakeholder Negotiation</li>
+        <li>Critical Thinking</li>
+        <li>Real-Time Problem Solving</li>
+        <li>High Attention to Detail</li>
+        <li>Public Speaking &amp; Presentation</li>
+        <li>Adaptability &amp; Continuous Learning</li>
+        <li>Resilience under High Pressure</li>
       </ul>
     </div>
 
@@ -481,12 +504,11 @@
 <div id="eduModal" class="modal">
   <div class="modal-content">
     <h2>Capstone Project</h2>
-    <p><strong>The Development of a Public Relations System to Promote the Hire-Purchase Business of Aquatic Extreme Sports</strong></p>
-    <p style="padding: 12px 28px 0; opacity: 0.8; font-size: 14px; line-height: 1.7;">Developed a comprehensive digital ecosystem designed to centralize the extreme sports community and support local businesses through digitalization. The platform focuses on three core functional pillars:</p>
+    <p><strong>Public Relations System for a Hire-Purchase Aquatic Extreme Sports Business</strong></p>
     <ul>
-      <li><strong>Knowledge & Engagement Hub:</strong> Created an interactive community forum for expert knowledge sharing, peer-to-peer support, and experience exchange to enhance user engagement.</li>
-      <li><strong>Business Directory & PR Platform:</strong> Engineered a centralized database of extreme sports retailers and rental services nationwide, serving as a PR tool to increase market visibility for local entrepreneurs.</li>
-      <li><strong>Instructional Resource Center:</strong> Integrated a structured educational module providing standardized safety guidelines and technical tutorials for various extreme sports.</li>
+      <li><strong>Requirements & Analysis:</strong> Led end-to-end requirements analysis for a multi-functional sports platform, translating business and community needs into defined functional requirements and user stories.</li>
+      <li><strong>Feature & Content Design:</strong> Designed user flows for three core modules: a community forum for Q&amp;A, a retailer/rental directory, and an instructional resource center.</li>
+      <li><strong>Usability &amp; Interface Evaluation:</strong> Conducted hands-on usability testing and walkthroughs to validate designs before deployment, ensuring smooth navigation and error-free user journeys.</li>
     </ul>
   </div>
 </div>
